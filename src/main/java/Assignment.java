@@ -1,16 +1,17 @@
 public class Assignment {
    public static void main(String[] args) {
-    testProduct();
-    testBook();
+   
+    giant();
    }
 
-   public static void testProduct(){
 
-   }
+   public static void giant(){
+   enemy giant = new enemy("Giant", 30, 5, 1.5);
+   
+   giant.displayInfo();
+   giant.attack();
+   
+    
 
-   public static void testBook(){
-    Book hobbit = new Book("The Hobbit");
-
-    System.out.println(hobbit.title);
    }
 }
