@@ -7,6 +7,7 @@ public class  enemy {
     private int damage;
     private double speed;
 
+
     public enemy(String name, int health, int damage, double speed){
         this.name = name;
         this.health = health;
@@ -36,10 +37,29 @@ public class  enemy {
 
     }
     
-  public void attack(){
-    System.out.println(this.name + " attacked for " + this.damage + " damage!");
+  public int attack(){
+    System.out.println("The "+this.name + " was attacked!");
+    return this.damage;
   }
 
 
+  public int takeDamage(int amount){
+    health-= amount;
+    return health;
+  }
+
+  public boolean isDefeated(){
+    if (health <= 0 ){
+        System.out.println("The enemy has been slained!");
+        return true;
+    }
+    else return false;
+  }
+
+
+
+
 }
+
+
 

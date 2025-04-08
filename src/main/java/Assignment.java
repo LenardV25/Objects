@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Assignment {
    public static void main(String[] args) {
    
@@ -6,12 +7,12 @@ public class Assignment {
 
 
    public static void giant(){
-   enemy giant = new enemy("Giant", 30, 5, 1.5);
+   enemy giant = new enemy("Giant", 0, 5, 1.5);
    
    giant.displayInfo();
-   giant.attack();
-   
-    
+   giant.isDefeated();
 
    }
+
+   
 }
