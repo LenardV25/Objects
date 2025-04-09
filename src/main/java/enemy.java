@@ -43,6 +43,15 @@ public class  enemy {
     public double getSpeed(){
         return this.speed;
     }
+    public void setSpeed(double speed){
+      this.speed = speed;
+    }
+
+    public void game(){
+      while(health > 0){
+        
+      }
+    }
 
     public void displayInfo(){
         System.out.println("Enemy: "+ this.name + "\nHealth: " +this.health + "\nDamage: " +this.damage+ "\nSpeed: " +this.speed);
@@ -57,7 +66,6 @@ public class  enemy {
 
   public int takeDamage(int amount){
     this.health-= amount;
-    
     System.out.println("The " + this.name + " took " + amount + " damage" + "\n" + this.name +" has " + this.health + " health remaining");
     return this.health;
   }
